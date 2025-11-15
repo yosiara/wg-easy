@@ -7,7 +7,7 @@ services:
     #     ipv4_address: 10.8.0.1
     #     ipv6_address: fdcc:ad94:bacf:61a3::2a
     volumes:
-      - /etc/wireguard:/etc/wireguard
+      - /etc/wireguard:/etc/wireguard:ro
       - /lib/modules:/lib/modules:ro
     ports:
       - "51820:51820/udp"
